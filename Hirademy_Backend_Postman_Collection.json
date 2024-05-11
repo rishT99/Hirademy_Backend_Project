@@ -1,0 +1,130 @@
+{
+    "info": {
+        "_postman_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "name": "Hirademy Backend APIs",
+        "description": "Collection of CRUD APIs for managing assistants"
+    },
+    "item": [
+        {
+            "name": "Create Assistant",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"Assistant Name\", \"mobile\": \"1234567890\", \"email\": \"assistant@example.com\", \"salary\": 50000, \"city\": \"City\", \"country\": \"Country\", \"department\": \"Department\", \"role\": \"Role\"}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/assistant",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "assistant"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Assistants",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/assistants",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "assistants"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Assistant by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/assistant/1",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "assistant",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Assistant",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"Updated Assistant Name\", \"mobile\": \"9876543210\", \"email\": \"updated@example.com\", \"salary\": 60000, \"city\": \"Updated City\", \"country\": \"Updated Country\", \"department\": \"Updated Department\", \"role\": \"Updated Role\"}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/assistant/1",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "assistant",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Assistant",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/assistant/1",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "assistant",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
