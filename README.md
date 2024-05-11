@@ -1,6 +1,3 @@
-Sure! Here's an updated README file with detailed instructions on how to run the application locally and use the Postman collection:
-
----
 
 # Hirademy Backend Project
 
